@@ -1,25 +1,30 @@
 //4.1
-void setup() {
+void setup() 
 {
-  pinMode(LED_BUILTIN, OUTPUT); // initialize digital pin LED_BUILTIN as an output.
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT); 
 }
 void loop()
 {
-  digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)
+  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH); 
   delay(1000); // wait for a second
-  digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
+  // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW); 
   delay(1000); // wait for a second
 }
 
 //4.1.3
-int ledPin = 13;  // LED connected to digital pin 13
-int inPin = 12;    // pushbutton connected to digital pin 7
+int ledPin = 13;// LED connected to digital pin 13
+int inPin = 12;// pushbutton connected to digital pin 7
 int input = 0;
 
-void setup() {
+void setup() 
 {
-  pinMode(ledPin, OUTPUT); // initialize digital pin D13 as an output.
-  pinMode(inPin, INPUT); // initialize digital pin D12 as an input.
+  // initialize digital pin D13 as an output.
+  pinMode(ledPin, OUTPUT); 
+  // initialize digital pin D12 as an input.
+  pinMode(inPin, INPUT); 
 }
 void loop()
 {
@@ -32,7 +37,7 @@ int ledPin = 13;  // LED connected to digital pin 13
 int inPin = 12;    // pushbutton connected to digital pin 7
 int input = 0;
 
-void setup() {
+void setup() 
 {
   pinMode(ledPin, OUTPUT); // initialize digital pin D13 as an output.
   pinMode(inPin, INPUT); // initialize digital pin D12 as an input.
@@ -72,16 +77,20 @@ void setup() {
 }
 void loop()
 {
-  digitalWrite(sm1_ledRojo, HIGH); // turn the LED on (HIGH is the voltage level)
-  digitalWrite(sm2_ledVerde, HIGH); // turn the LED on (HIGH is the voltage level)
+  digitalWrite(sm1_ledRojo, HIGH); 
+  digitalWrite(sm2_ledVerde, HIGH); 
   delay(5000); // wait for 5 seconds
-  digitalWrite(sm1_ledRojo, HIGH); // turn the LED on (HIGH is the voltage level)
-  digitalWrite(sm2_ledAmarillo, HIGH); // turn the LED on (HIGH is the voltage level)
+  digitalWrite(sm2_ledVerde, LOW); 
+  digitalWrite(sm2_ledAmarillo, HIGH); 
   delay(1000); // wait for a second
-  digitalWrite(sm1_ledVerde, HIGH); // turn the LED on (HIGH is the voltage level)
-  digitalWrite(sm2_ledRojo, HIGH); // turn the LED on (HIGH is the voltage level)
+  digitalWrite(sm2_ledAmarillo, LOW); 
+  digitalWrite(sm1_ledRojo, LOW);
+  digitalWrite(sm1_ledVerde, HIGH);
+  digitalWrite(sm2_ledRojo, HIGH); 
   delay(5000); // wait for 5 seconds
-  digitalWrite(sm1_ledAmarillo, HIGH); // turn the LED on (HIGH is the voltage level)
-  digitalWrite(sm2_ledRojo, HIGH); // turn the LED on (HIGH is the voltage level)
+  digitalWrite(sm1_ledVerde, LOW);
+  digitalWrite(sm1_ledAmarillo, HIGH); 
   delay(1000); // wait for a second
+  digitalWrite(sm1_ledAmarillo, LOW);
+  digitalWrite(sm2_ledRojo, LOW); 
 }
